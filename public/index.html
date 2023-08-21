@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Stream</title>
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+  <video id="player" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" data-setup="{}">
+    <source src="http://localhost:8001/live/STREAM_NAME.flv" type="video/x-flv">
+  </video>
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+  <script>
+    var player = videojs('player');
+    player.play();
+  </script>
+</body>
+</html>
